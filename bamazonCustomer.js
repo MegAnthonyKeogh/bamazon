@@ -42,17 +42,18 @@ connection.connect(function(err) {
 function startBrowse() {
   connection.query("SELECT * FROM products", function(err, results) {
     if (err) throw err;
+    console.log(results);
     inquirer
       .prompt([
         {
           name: "choice",
-          type: "rawlist",
+          type: "list",
           choices: function() {
             var choiceArray = [];
             for (var i = 0; i < results.length; i++) {
               choiceArray.push(results[i].product_name);
             }
-            return choiceArray;
+            return(choiceArray);
           },
           message: "Please select an item to purchase"
         },
@@ -61,18 +62,23 @@ function startBrowse() {
           type: "input",
           message: "How many would you like to purchase?"
         }
-      ])
-      .then(function(answer) {
+      ]) 
+      .then(function(answers) {
         // get the information of the chosen item
-        var subtractQuant = answer.stock
+        var subtractQuant = answers.stock;
         var chosenItem;
         for (var i = 0; i < results.length; i++) {
-          if (results[i].product_name === answer.choice) {
+          if (results[i].product_name === answers.choice) {
             chosenItem = results[i];
+            ;
           }
         }
+        console.log(chosenItem.stock);
+        console.log(answers.stock);
+        console.log("================================================");
       
-        if (chosenItem.stock > parseInt(answer.stock)) {
+        if (chosenItem.stock > parseInt(answers.stock)) {
+          
           // bid was high enough, so update db, let the user know, and start over
           connection.query(
             "UPDATE products SET ? WHERE ?",
@@ -84,18 +90,23 @@ function startBrowse() {
               id: chosenItem.id
             }
           ],
-          function(error) {
-            if (error) throw err;
-            console.log("You have successful order "+ answer.stock + " of " + chosenItem.product_name );
+          function(error, res) {
+            if (error) {
+              console.log("meg")
+              console.log(error)
+              // throw error;
+            }
+            
+            console.log("You have successful order "+ answers.stock + " of " + chosenItem.product_name );
             start();
           }
-        );
+        )
       }
       else {
-        console.log("We do not have enough items for that amount. There's only " + chosenItem.stock + "of that item left" );
+        console.log("We do not have enough items for that amount. There's only " + chosenItem + "of that item left" );
         start();
       }
-    });
-
-  })
+    })
+})
 };
+
