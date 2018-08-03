@@ -23,6 +23,9 @@ Mysql workbench -- https://www.mysql.com/products/workbench/
 Terminal (already installed on mac)
 VS Code --https://code.visualstudio.com/
 
+
+Here's a quick video on how the application works + a brief review of the different applications needed for it to be successful. https://drive.google.com/file/d/1AkKjOc8iUwDh-QIlyOLd4wd4BTaUR3_Z/view
+
 Give examples
 Installing
 A step by step series of examples that tell you how to get a development env running
@@ -50,23 +53,21 @@ Deployment
 Add additional notes about how to deploy this on a live system
 
 Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+VS CODE
+MAMP
+NODE JS
+NPM - Inquirer and Mysql
+Mysql
+Mysql Workbench
 
 Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+This is the first version of this application.
 
-Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
+Author
+Megan Anthony Keogh
 
 License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+There is no license for this application. 
 
 Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+This application would not have been possible without the help of Angela Andrews https://github.com/angela-andrews, Guillermo Barila https://github.com/gui365, and Ed Brennan, Professor at University of Pennsylvania.  
