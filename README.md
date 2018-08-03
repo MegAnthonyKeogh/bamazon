@@ -18,11 +18,11 @@ touch .gitignore -- creates file (This file tells github to ignore the names of 
 #### Dependencies
 Once you've created where your application will be built, it is now time to install/download the applications needed to run this program. All of these applications are free to use. 
 I used:
-MAMP -- https://www.mamp.info/en/ *at the time this is written, MAMP Pro was still in Beta. Use regular MAMP to ensure consistency.  
-Mysql -- This will be installed via the MAMP installation.
-Mysql workbench -- https://www.mysql.com/products/workbench/ 
-Terminal (already installed on mac)
-VS Code --https://code.visualstudio.com/
+ * MAMP -- https://www.mamp.info/en/ *at the time this is written, MAMP Pro was still in Beta. Use regular MAMP to ensure consistency.  
+ * Mysql -- This will be installed via the MAMP installation.
+ * Mysql workbench -- https://www.mysql.com/products/workbench/ 
+ * Terminal (already installed on mac)
+ * VS Code --https://code.visualstudio.com/
 
 #### How it works video
 Here's a quick video on how the application works + a brief review of the different applications needed for it to be successful. https://drive.google.com/file/d/1AkKjOc8iUwDh-QIlyOLd4wd4BTaUR3_Z/view
