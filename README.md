@@ -105,6 +105,8 @@ function launchStore() {
     });
   }
 
+The response in terminal should look somewhat like JSON. By that, I mean it should look like data that is organized. Here's how my data results looks. 
+![Data](/results.png)
 
 Say what the step will be
 
