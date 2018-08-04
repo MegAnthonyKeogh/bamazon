@@ -78,33 +78,11 @@ Now that you have your data entered, you can now execute your work and build you
 
 * Step 6
 Now you can see if your data will come through to your application by calling it from the command line. Go into your bamazonCustomer.js file and write the below commands. This command should connect with mysql and print everything in your database. Make sure your port, user, and password information is correct. 
-
-var mysql = require("mysql");
-var inquirer = require("inquirer");
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: "",
-  user: "",
-  password: "",
-  database: "bamazon_DB"
-});
-
-connection.connect(function (err) {
-  if (err) throw err;
-  console.log("connected");
-  
-  launchStore();
-});
-
-function launchStore() {
-    connection.query("SELECT * FROM products", function (err, results) {
-      if (err) throw err;
-      var resultsOjb = results;
-      console.log(results);
-
-    });
-  }
-
+ 
+ Here's my version:
+ 
+ ![test code](/test.png)
+ 
 The response in terminal should look somewhat like JSON. By that, I mean it should look like data that is organized. Here's how my data results looks. 
 
 
