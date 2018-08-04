@@ -33,7 +33,7 @@ Once you have set up your machine to have all of the software needed for the app
 * Step 1
 The first step isto make sure your file is connected to your mysql database. You will need to the following code to your app.js(or whatever you decide to name this) file. 
 
-![Code Screenshot](/Desktop/screenshotcode.png)
+![Code Screenshot](/screenshotcode.png)
 
 Say what the step will be
 
