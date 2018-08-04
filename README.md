@@ -106,29 +106,19 @@ function launchStore() {
   }
 
 The response in terminal should look somewhat like JSON. By that, I mean it should look like data that is organized. Here's how my data results looks. 
+
+
 ![Data](/results.png)
 
-Say what the step will be
+If you've made it this far, then congratulations! You have successful created a working database that connects to Node! Feel free to experiment as you wish at this point. 
 
-Give the example
-And repeat
+* Step 7
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+Now that we're connected and we have data, it's now time to code our questions to interact with the user. This is where we will start using the NPM package Inquirer. This package prompts the user with questions and saves the responses to use at a later time. 
 
-Running the tests
-Explain how to run the automated tests for this system
+In my code, I ask the user two question. In my function, startBrowse(), I iterate over the array of products with a for loop, so that the user can see the items and can make a selection there. The prompt name choice, allows me to use my for loop to create the choices instantly. 
 
-Break down into end to end tests
-Explain what these tests test and why
-
-Give an example
-And coding style tests
-Explain what these tests test and why
-
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
+After the user selects an item, inquirer prompts them with the question, "how many?". Here is the code:
 
 #### Built With
 VS CODE
