@@ -31,9 +31,17 @@ Here's a quick video on how the application works + a brief review of the differ
 Once you have set up your machine to have all of the software needed for the application to run and the npm packages ready in your file, it's time to start coding! 
 
 * Step 1
-The first step isto make sure your file is connected to your mysql database. You will need to the following code to your app.js(or whatever you decide to name this) file. 
+The first step isto make sure your file is connected to your mysql database. You will need to the following code to your bamazonCustomer.js(or whatever you decide to name this) file. 
 
 ![Code Screenshot](/screenshotcode.png)
+
+
+* Step 2 
+After you save this code. Open your terminal window and open your folder where this application lives. In this example, my code lives in a folder name bamazon. Once I'm in that file, I launch the application by typing the command "node bamazonCustomer.js". If the application is connected, you will see the phrase, "connected!" print to the command line. 
+
+This means you have successfully connected to the mysql database from node and you should be able to continue implimenting your program. 
+
+It should look like this:
 
 Say what the step will be
 
