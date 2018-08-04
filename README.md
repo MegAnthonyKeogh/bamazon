@@ -65,7 +65,12 @@ For this application, the table looks like this in mysql:
 
 ![Mysql](/mysql.png)
 
+* Step 4
 
+Now that you have built a table, it's time to start filling that table with data. 
+
+You must use the, "INSERT INTO + Tablename command to let mysql know where the data is going. Then in parentheseis, write the key values/ column names that you are inputting data.  
+The following line will be the actual data being inserted into the table. Below is an example of how I inserted my data. 
 Say what the step will be
 
 Give the example
