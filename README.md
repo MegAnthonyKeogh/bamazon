@@ -63,7 +63,7 @@ The next sequence of commands builds a table in the database with the following 
 
 For this application, the table looks like this in mysql:
 
-
+!Mysql](/mysql.png)
 
 
 Say what the step will be
