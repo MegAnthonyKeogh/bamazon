@@ -73,6 +73,39 @@ You must use the, "INSERT INTO + Tablename command to let mysql know where the d
 The following line will be the actual data being inserted into the table. Below is an example of how I inserted my data. 
 ![Data Entry](/enterData.png)
 
+* Step 5
+Now that you have your data entered, you can now execute your work and build your dataset! With your mouse, highlight all of the commands you would like to run and then press the lightening bolt in the upper left corner. You will know it worked when you see your database name in the lower left quadrant. You should be able to click there and see your table and information. 
+
+* Step 6
+Now you can see if your data will come through to your application by calling it from the command line. Go into your bamazonCustomer.js file and write the below commands. This command should connect with mysql and print everything in your database. Make sure your port, user, and password information is correct. 
+
+var mysql = require("mysql");
+var inquirer = require("inquirer");
+var connection = mysql.createConnection({
+  host: "localhost",
+  port: "",
+  user: "",
+  password: "",
+  database: "bamazon_DB"
+});
+
+connection.connect(function (err) {
+  if (err) throw err;
+  console.log("connected");
+  
+  launchStore();
+});
+
+function launchStore() {
+    connection.query("SELECT * FROM products", function (err, results) {
+      if (err) throw err;
+      var resultsOjb = results;
+      console.log(results);
+
+    });
+  }
+
+
 Say what the step will be
 
 Give the example
