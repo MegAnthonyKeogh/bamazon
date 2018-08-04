@@ -45,6 +45,27 @@ It should look like this:
 
 ![Executing Node in Terminal](/terminal.png)
 
+* Step 3
+Now that you are connected to Mysql, it's time to start building your database with some data! I manually entered the data here because the table is small. If you have a lot of data, it is possible in import that data quickly. 
+In mysql, you can create a database using the command, "CREATE DATABASE NAME_DB;"
+
+Then instruct mysql to use the database with the command USE NAME_DB;
+
+The next sequence of commands builds a table in the database with the following columns:
+"CREATE TABLE + tableName (
+  id INT NOT NULL AUTO_INCREMENT, -- this gives each row its own identity which will be helpful for a later use)
+  product_name VARCHAR(100) NOT NULL,
+  department_name VARCHAR(45) NOT NULL,
+  price INT default 0,
+  stock INT default 0,
+  PRIMARY KEY (id) ( -- this ensures the id is unique for every row. 
+);
+
+For this application, the table looks like this in mysql:
+
+
+
+
 Say what the step will be
 
 Give the example
