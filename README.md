@@ -43,6 +43,8 @@ This means you have successfully connected to the mysql database from node and y
 
 It should look like this:
 
+![Executing Node in Terminal](/terminal.png)
+
 Say what the step will be
 
 Give the example
