@@ -128,7 +128,21 @@ Here is my code:
 
 ![stock check](/stock.png)
 
-#### Built With
+The answers parameter holds the information from the user. answers.choice - is the item the user chose. answers.stock is the quantity they inputted into the  prompt. 
+
+The  connection.query(
+              "UPDATE products SET ? WHERE ?", [{}]
+              )
+              
+              The connection.query code above immediately updates the table in our database if we can fulfill the order place. It does not keep a ledger of the transaction. 
+              
+              The rest of the code is some simple javascript if/else statements. 
+              
+             
+                  
+
+
+## Built With
 VS CODE
 MAMP
 NODE JS
@@ -147,3 +161,6 @@ There is no license for this application.
 
 #### Acknowledgments
 This application would not have been possible without the help of Angela Andrews https://github.com/angela-andrews, Guillermo Barila https://github.com/gui365, and Ed Brennan, Professor at University of Pennsylvania.  
+
+#### Questions
+If you have any questions, please do not hesitate to reach out. Thank you! 
