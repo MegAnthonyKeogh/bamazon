@@ -126,6 +126,8 @@ Since we're connected with our database, our Node application is up-to-date on t
 
 Here is my code:
 
+![stock check](/stock.png)
+
 #### Built With
 VS CODE
 MAMP
