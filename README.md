@@ -107,26 +107,17 @@ Here is my code:
 ![stock check](/stock.png)
 
 The answers parameter holds the information from the user. answers.choice - is the item the user chose. answers.stock is the quantity they inputted into the  prompt. 
-
-The  connection.query(
-              "UPDATE products SET ? WHERE ?", [{}]
-              )
-              
-              The connection.query code above immediately updates the table in our database if we can fulfill the order place. It does not keep a ledger of the transaction. 
-              
-              The rest of the code is some simple javascript if/else statements. 
-              
-             
-                  
-
+The connection.query function and UPDATE commands will update the information in the database. The question marks will be replace with which product the user chooses (answers.choice) and the quantity they choose(answer.stock). 
+I used if/else statements in case the user selects to purchase more items than are allotted in the stock. If the answer.stock > the chosenItem.Stock then the user will be alerted that there is an insufficent amount. 
+If chosenItem.stock is > answer.stock then the order will be fulfulled. 
 
 ## Built With
-VS CODE
-MAMP
-NODE JS
-NPM - Inquirer and Mysql
-Mysql
-Mysql Workbench
+ * VS CODE
+ * MAMP
+ * NODE JS
+ * NPM - Inquirer and Mysql
+ * Mysql
+ * Mysql Workbench
 
 #### Version
 This is the first version of this application.
