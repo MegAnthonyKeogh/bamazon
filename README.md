@@ -18,7 +18,7 @@ touch .gitignore -- creates file (This file tells github to ignore the names of 
 #### Dependencies
 Once you've created where your application will be built, it is now time to install/download the applications needed to run this program. All of these applications are free to use. 
 I used:
- * MAMP -- https://www.mamp.info/en/ *at the time this is written, MAMP Pro was still in Beta. Use regular MAMP to ensure consistency.  
+ * MAMP -- https://www.mamp.info/en/ *at the time this is written, MAMP Pro was still in Beta. Use regular MAMP to ensure consistency.  Here's the installation guide https://documentation.mamp.info/en/MAMP-Mac/How-Tos/
  * Mysql -- This will be installed via the MAMP installation.
  * Mysql workbench -- https://www.mysql.com/products/workbench/ 
  * Terminal (already installed on mac)
@@ -27,9 +27,13 @@ I used:
 #### How it works video
 Here's a quick video on how the application works + a brief review of the different applications needed for it to be successful. https://drive.google.com/file/d/1AkKjOc8iUwDh-QIlyOLd4wd4BTaUR3_Z/view
 
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
+#### Test Code and Installing 
+Once you have set up your machine to have all of the software needed for the application to run and the npm packages ready in your file, it's time to start coding! 
+
+* Step 1
+The first step isto make sure your file is connected to your mysql database. You will need to the following code to your app.js(or whatever you decide to name this) file. 
+
+![Code Screenshot](/Desktop/screenshotcode.png)
 
 Say what the step will be
 
@@ -61,7 +65,7 @@ NPM - Inquirer and Mysql
 Mysql
 Mysql Workbench
 
-#### Versioning
+#### Version
 This is the first version of this application.
 
 #### Author
