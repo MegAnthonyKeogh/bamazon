@@ -120,6 +120,8 @@ In my code, I ask the user two question. In my function, startBrowse(), I iterat
 
 After the user selects an item, inquirer prompts them with the question, "how many?". Here is the code:
 
+![forloop and choices](/choiceArray.png)
+
 #### Built With
 VS CODE
 MAMP
