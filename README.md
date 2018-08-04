@@ -122,6 +122,10 @@ After the user selects an item, inquirer prompts them with the question, "how ma
 
 ![forloop and choices](/choiceArray.png)
 
+Since we're connected with our database, our Node application is up-to-date on the current stock. The ".then" portion of the inquirer prompt allows us to use the input from the user against our database. I used the following function to figure out if we have enough of the current item in stock to meet the demand of the user. If not, I console.log("Sorry, not enough stock"); or something along those lines. 
+
+Here is my code:
+
 #### Built With
 VS CODE
 MAMP
